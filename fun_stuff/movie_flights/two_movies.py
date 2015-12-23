@@ -58,9 +58,9 @@ def main():
     # If movies = {(k_{1}: v_{1}), (k_{2}: v_{2}), ..., (k_{n}: v_{n})}, then 
     # info = [[(k_{1}, v_{1}), (k_{2}: v_{2}), ..., (k_{n}: v_{n})]]
     # We're doing this because our next list, flight_remaining, is going to be of this structure, too. 
-  for item in info: # So, for each sole list/tuple in info
-      matrix.append(item) # First, append item to matrix. This is the identifying tag.  
-      flight_length.append(info) # Now append the whole thing to flight_length
+  # for item in info: # So, for each sole list/tuple in info
+      # matrix.append(item) # First, append item to matrix. This is the identifying tag.  
+      # flight_length.append(info) # Now append the whole thing to flight_length
   print(info)
     # Add (k_{1}, v_{1}) to the first element in the list
     #info = list(())
