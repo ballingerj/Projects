@@ -29,6 +29,31 @@ int main() {
   printf("\nWhat is a pointer?\n");
   printf("Answer: A pointer is a variable whose value is the address of another variable. The general declaration of a pointer variable is:\n type *variableName;\nAnd we can assign addresses to pointers by the following command:\n type *variableName = &variable;\n");
   printf("\nHow do I use pointers?\n");
-  printf("Let's give an example with \n");
+  printf("Let's give an example.\n");
+
+  int *ip = &x; /* pointer to an int */
+  char *ch; /* pointer to a char */
+  printf("\nLet the pointer variable *ip equal the address of x; i.e., *ip = &x.\nThen the address of *ip = %x\n", &*ip);
+  printf("This is the same as the address of x: %x\n", &x);
+  printf("\nNow, what happens when we try to modify x?\n");
+  x = x + 2;
+  printf("x = x + 2;\n");
+  printf("The new address of x is %x\n", &x);
+  printf("Just kidding! Nothing happened. Now let's modify *ip.\n");
+  *ip = *ip + 2;
+  printf("The address of *ip: %x\n", &*ip);
+  printf("But did you know there's also an \"ip\" variable, which we never declared?\nThe address of ip is %x\n", &ip);
+  printf("Mind blowing, right? The addresses are different! Now let's look at their values.\n");
+  printf("The value of *ip is %x\n", *ip);
+  printf("The value of ip is %x\n", ip);
+
+  /*printf("\nNow let's look at strings.\n");
+  char t[12] = "Hello World!";
+  char s[12];
+  printf("The String t is %s\n", t);
+  printf("The String s is empty %s\n", s);
+  *s = &s;
+  *t = &t;
+  while (*s++ = *t++);*/
   return 0;
 }
