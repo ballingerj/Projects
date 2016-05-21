@@ -1,0 +1,9 @@
+cost,value,valuename
+100,0.1213,Cost Benefit
+1000,0.1494,Cost Benefit
+10000,0.1488,Cost Benefit
+100,0.1125,Standard Deviation
+1000,0.1095,Standard Deviation
+10000,0.1103,Standard Deviation
+100,0.622,Time (Seconds)
+1000,2.574,Time (Seconds)
